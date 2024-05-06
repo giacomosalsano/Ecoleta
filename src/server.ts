@@ -8,4 +8,4 @@ app.get('/users',(request, response) => {
     response.json(['Hello World! How are you?']);
 });
 
-app.listen(3333);
+app.listen(3000);
