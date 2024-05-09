@@ -17,3 +17,5 @@ export async function up(Knex: Knex) {
 export async function down(Knex: Knex) {
    return Knex.schema.dropTable('point');
 };
+
+
