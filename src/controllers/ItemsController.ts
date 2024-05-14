@@ -1,5 +1,4 @@
-import { Request, Response } from 'express';
-
+import {Request, Response} from 'express';
 import knex from '../database/connection';
 
 class ItemsController {
@@ -15,7 +14,6 @@ class ItemsController {
         });
     
         return response.json({serializedItems, message: 'Hello World! How are you?'});
-    
     }
 }
 
