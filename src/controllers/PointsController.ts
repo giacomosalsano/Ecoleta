@@ -13,6 +13,7 @@ class PointsController{
         if (!point) {
             return response.status(400).json({ message: 'Point Not Found.' });
         }
+        return response.json(point);
     }
     async create (request: Request, response: Response) {
         const {
