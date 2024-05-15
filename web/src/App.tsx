@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 
+import Home from './pages/Home';
+
 function App() {
   return (
-    <h1>Hello World! How are you?</h1>
+    <Home />
   );
 }
-
 export default App;
