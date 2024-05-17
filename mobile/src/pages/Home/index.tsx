@@ -47,7 +47,7 @@ const Home = () => {
             placeholder="Digite a UF"
             value={uf}
             maxLength={2}
-            autoCapitalize="characters"/* Ñ está funcionando! */
+            autoCapitalize="characters"
             autoCorrect={false}
             onChangeText={setUf}
           />
