@@ -6,7 +6,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Alert } fr
 import MapView, { Marker } from 'react-native-maps';
 import { SvgUri } from 'react-native-svg';
 import * as Location from 'expo-location';
-import api from '../../services/api';
+import api from '../../../services/api';
 
 interface Item {
   id: number;
@@ -40,13 +40,12 @@ const Points = () => {
 
   const routeParams = route.params as Params;
 
-  /* Ñ está funcionando !*/
   useEffect (() => {
     async function loadPosition() {
       const { status } = await Location.requestPermissionsAsync();
 
       if (status !== 'granted') {
-        Alert.alert('Oooops...', 'Presisamos de sua permissão para obter a localização');
+        Alert.alert('Oooops...', 'Precisamos de sua permissão para obter a localização');
         return;
       }
 
@@ -147,7 +146,7 @@ const Points = () => {
           <ScrollView 
             horizontal 
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ paddingHorizontal: 10 }}
+            contentContainerStyle={{ paddingHorizontal: 20 }}
           >
            {items.map(item => (
               <TouchableOpacity 

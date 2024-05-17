@@ -3,7 +3,7 @@ import { Feather as Icon, FontAwesome } from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { View, StyleSheet, Image, Text, TouchableOpacity, SafeAreaView, Linking } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
-import api from '../../services/api';
+import api from '../../../services/api';
 import * as MailComposer from 'expo-mail-composer';
 
 interface Params {
