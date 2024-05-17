@@ -112,12 +112,12 @@ const Points = () => {
         <Text style={styles.description}>Encontre no mapa um ponto de coleta.</Text>
 
         <View style={styles.mapContainer}>
-          { /* initialPosition[0] !== 0 && */ (
+          { initialPosition[0] !== 0 &&  (
             <MapView 
               style={styles.map}
               initialRegion={{
-                latitude:  -27.2092052 , /* initialPosition[0],*/                
-                longitude: -49.6401092, /* initialPosition[1], */
+                latitude:  initialPosition[0],                
+                longitude: initialPosition[1],
                 latitudeDelta: 0.014,
                 longitudeDelta: 0.014,
               }} 
